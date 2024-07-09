@@ -1,6 +1,6 @@
-#supplier_initializer.rb
+#Supplier.rb
 
-class Supplier_initializer
+class Supplier
   attr_accessor :name
   def initialize(name)
     @name = name

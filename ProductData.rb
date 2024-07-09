@@ -1,10 +1,10 @@
 #product_data.rb
 
 
-require_relative 'Product_initializer'
+require_relative 'Product'
 module Products
 
-  class Products_data
+  class ProductsData
     attr_accessor :items
     def initialize
       @items = []
@@ -14,7 +14,7 @@ module Products
     def file_data(filename)
       File.foreach(filename) do |line|
         id, name, stock_level = line.chomp.split(',')
-        @items << Product_initializer.new(id, name, stock_level)
+        @items << Product.new(id, name, stock_level)
       end
     end
 
@@ -26,7 +26,7 @@ module Products
         puts "Error Product Already Exists in file"
         puts
       else      
-        @items << Product_initializer.new(id, name, stock_level)
+        @items << Product.new(id, name, stock_level)
       end
     end
 

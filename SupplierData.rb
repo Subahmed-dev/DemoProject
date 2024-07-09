@@ -1,9 +1,9 @@
-#supplier_data.rb
+#SupplierData.rb
 
-require_relative 'Supplier_initializer'
+require_relative 'Supplier'
 
 module Suppliers 
-  class Supplier_data
+  class SupplierData
     attr_accessor
     def initialize
       @s_items = []
@@ -13,7 +13,7 @@ module Suppliers
     def file_data(filename)
       File.foreach(filename) do |line|
         name = line.chomp
-        @s_items << Supplier_initializer.new(name)        
+        @s_items << Supplier.new(name)        
       end
     end
 
@@ -49,7 +49,7 @@ module Suppliers
         puts "Error. Supplier already exists"
 
       else
-        @s_items << Supplier_initializer.new(name)
+        @s_items << Supplier.new(name)
       end
     end
 

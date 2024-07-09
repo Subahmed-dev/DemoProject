@@ -1,17 +1,17 @@
 #maib.rb
 
-require_relative 'Product_data'
-require_relative 'Supplier_data'
+require_relative 'ProductData'
+require_relative 'SupplierData'
 
 
 
-productfiles = Products::Products_data.new
+productfiles = Products::ProductsData.new
 productfiles.file_data('products.txt')
 puts
 
 
 
-supplierfiles = Suppliers::Supplier_data.new
+supplierfiles = Suppliers::SupplierData.new
 supplierfiles.file_data('suppliers.txt')
 
 productfiles.display_products

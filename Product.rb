@@ -1,6 +1,6 @@
 #product_initilizer.rb
 
-class Product_initializer
+class Product
   attr_accessor :id, :name, :stock_level
   def initialize(id, name, stock_level)
     @id = id 
