@@ -1,0 +1,5 @@
+ID: 1, Name: Raw Material, Stock_level: 12
+ID: 2, Name: Safety Stock, Stock_level: 23
+ID: 3, Name: Dropshipping Inventory, Stock_level: 34
+ID: 5, Name: Manufacturing Material, Stock_level: 54
+ID: 6, Name: Hello, Stock_level: 123

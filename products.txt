@@ -1,0 +1,5 @@
+1,Raw Material,12
+2,Safety Stock,23
+3,Dropshipping Inventory,34
+4,Components,56
+5,Manufacturing Material,54
